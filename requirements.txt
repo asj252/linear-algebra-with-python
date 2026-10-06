@@ -1,0 +1,18 @@
+# Packages needed to run the notebooks of Linear Algebra with Python.
+#
+# Install: pip install -r requirements.txt
+# Tested with Python 3.14, numpy 2.4, scipy 1.17, sympy 1.14, matplotlib 3.10,
+# plotly 6.3, anywidget 0.9, ipywidgets 8.1, pandas 3.0, scikit-learn 1.8, networkx 3.6.
+# Interactive figures (plotly FigureWidget, sliders) need plotly>=6 with anywidget and ipywidgets.
+
+numpy>=1.26
+scipy>=1.11
+sympy>=1.12
+matplotlib>=3.8
+plotly>=6.0
+anywidget>=0.9
+ipywidgets>=8.1
+nbformat>=5.9
+pandas>=2.1
+scikit-learn>=1.4
+networkx>=3.2

@@ -1,0 +1,17 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Build outputs
+_build/
+_site/
+
+# Files written when running the notebooks
+lp_unit_balls.svg
+
+# OS / editor
+.DS_Store
+Thumbs.db

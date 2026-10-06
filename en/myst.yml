@@ -1,0 +1,64 @@
+version: 1
+project:
+  title: Linear Algebra with Python
+  authors:
+    - name: An-Sheng Jhang
+    - name: Ping-Zen Ong
+  github: asj252/linear-algebra-with-python
+  license:
+    content: CC-BY-NC-SA-4.0
+    code: MIT
+  numbering:
+    title: false
+    headings: false
+  toc:
+    - file: intro.md
+    - file: EN_Common_Notations.ipynb
+    - file: EN_Chap1_Set.ipynb
+    - file: EN_Chap2_Vector.ipynb
+      children:
+        - file: EN_Chap2_Vector_Exercises.ipynb
+    - file: EN_Chap3_Linear_Transformation_Matrix.ipynb
+      children:
+        - file: EN_Chap3_Linear_Transformation_Matrix_Exercises.ipynb
+        - file: EN_EXP1_2D_Linear.ipynb
+        - file: EN_EXP2_3D_Linear.ipynb
+    - file: EN_Chap4_Abstract_Linear_Space.ipynb
+      children:
+        - file: EN_Chap4_Abstract_Linear_Space_Exercises.ipynb
+        - file: EN_EXP3_Tensor_Product.ipynb
+    - file: EN_Chap5_Block_Matrix.ipynb
+      children:
+        - file: EN_Chap5_Block_Matrix_Exercises.ipynb
+        - file: EN_EXP4_Block.ipynb
+        - file: EN_EXP5_Covariance.ipynb
+    - file: EN_Chap6_Linear_System.ipynb
+      children:
+        - file: EN_Chap6_Linear_System_Exercises.ipynb
+        - file: EN_EXP6_PLU.ipynb
+    - file: EN_Chap7_Determinant.ipynb
+      children:
+        - file: EN_Chap7_Determinant_Exercises.ipynb
+    - file: EN_Chap8_Eigenvalue_Problem.ipynb
+      children:
+        - file: EN_Chap8_Eigenvalue_Problem_Exercises.ipynb
+        - file: EN_EXP7_Eigenvalue_Multiplicity.ipynb
+        - file: EN_EXP8_Markov.ipynb
+    - file: EN_Chap9_Inner_Product_Space.ipynb
+      children:
+        - file: EN_Chap9_Inner_Product_Space_Exercises.ipynb
+        - file: EN_EXP9_GramSchmidt.ipynb
+    - file: EN_Chap10_Quantum_Physics.ipynb
+      children:
+        - file: EN_Chap10_Quantum_Physics_Exercises.ipynb
+        - file: EN_EXP10_Bloch_Sphere.ipynb
+    - file: EN_Chap11_Singular_Value_Decomposition.ipynb
+      children:
+        - file: EN_EXP11_LSA.ipynb
+        - file: EN_EXP12_Eigenfaces.ipynb
+        - file: EN_EXP13_Iris_PCA.ipynb
+
+site:
+  options:
+    folders: true
+  template: book-theme
