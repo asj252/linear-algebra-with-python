@@ -61,4 +61,9 @@ project:
 site:
   options:
     folders: true
+    logo: ../images/logo.png
+    favicon: ../images/favicon.png
+    logo_text: Linear Algebra with Python
   template: book-theme
+  parts:
+    primary_sidebar_footer: sidebar-footer.md
