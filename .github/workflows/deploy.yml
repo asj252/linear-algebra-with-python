@@ -43,6 +43,8 @@ jobs:
           mkdir -p _site
           cp index.html _site/
           cp images/logo.png _site/
+          # Search Console ownership file (google<token>.html); keep it published or verification is lost.
+          find . -maxdepth 1 -name 'google*.html' -exec cp {} _site/ \;
           cp -r en/_build/html _site/en
           # The static build writes sitemap.xml and robots.txt by crawling its own local
           # theme server, so every URL there starts with http://localhost:3000.
