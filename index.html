@@ -2,11 +2,60 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Linear Algebra with Python</title>
-<meta http-equiv="refresh" content="0; url=en/">
-<link rel="canonical" href="en/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linear Algebra with Python: a free, open textbook</title>
+<meta name="description" content="A free, open linear algebra textbook with Python: geometry first, full proofs, 11 chapters and 13 hands-on experiments, from vectors to the SVD, with data science and quantum mechanics.">
+<link rel="canonical" href="https://asj252.github.io/linear-algebra-with-python/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Linear Algebra with Python">
+<meta property="og:title" content="Linear Algebra with Python: a free, open textbook">
+<meta property="og:description" content="Geometry first, full proofs, 11 chapters and 13 hands-on experiments, from vectors to the SVD.">
+<meta property="og:url" content="https://asj252.github.io/linear-algebra-with-python/">
+<meta property="og:image" content="https://asj252.github.io/linear-algebra-with-python/logo.png">
+<link rel="icon" href="en/favicon.ico">
+<style>
+:root {
+  --bg: #FBFAFD; --fg: #221B2E; --muted: #5A5266; --line: #E6E1EE;
+  --accent: #57068C; --accent-fg: #FFFFFF; --link: #006385;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16121C; --fg: #EEEAF4; --muted: #BDB5C9; --line: #3A3247;
+    --accent: #C49BF5; --accent-fg: #1A0F24; --link: #5CC0E0;
+  }
+}
+body { margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 40rem; margin: 0 auto; padding: 3.5rem 1rem 3rem; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .5rem; color: var(--accent); }
+.lead { font-size: 1.15rem; margin: 0 0 1.5rem; }
+.actions { display: flex; flex-wrap: wrap; gap: .75rem; margin: 0 0 2rem; }
+.actions a { padding: .55rem 1.1rem; border: 1px solid var(--accent); border-radius: .4rem;
+  text-decoration: none; font-weight: 600; color: var(--accent); }
+.actions a.primary { background: var(--accent); color: var(--accent-fg); }
+a { color: var(--link); }
+ul { padding-left: 1.2rem; }
+li { margin: .35rem 0; }
+footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line);
+  color: var(--muted); font-size: .9rem; }
+</style>
 </head>
 <body>
-<p><a href="en/">Linear Algebra with Python — English edition</a></p>
+<main>
+<h1>Linear Algebra with Python</h1>
+<p class="lead">A free, open textbook that starts from the geometry of linear mappings, develops the theory with full proofs, and uses Python to compute, verify and draw each idea.</p>
+<p class="actions">
+<a class="primary" href="en/">Read the book</a>
+<a href="https://colab.research.google.com/github/asj252/linear-algebra-with-python/blob/main/en/EN_EXP1_2D_Linear.ipynb">Try an experiment in Colab</a>
+<a href="https://github.com/asj252/linear-algebra-with-python">Source on GitHub</a>
+</p>
+<ul>
+<li>11 chapters, from sets and vectors through determinants, eigenvalues and inner product spaces to the singular value decomposition and quantum mechanics.</li>
+<li>13 hands-on experiments: 2D and 3D linear maps, Gaussian elimination, Markov chains, the Bloch sphere, eigenfaces, PCA. They run in Colab or Binder with nothing to install. This site shows the text, code and saved output; the sliders need a live Jupyter kernel.</li>
+<li>Exercises with expandable solutions and Python checks for most chapters.</li>
+</ul>
+<p>By An-Sheng Jhang and Ping-Zen Ong. This is the English edition.</p>
+<footer>Text <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> · Code MIT</footer>
+</main>
 </body>
 </html>

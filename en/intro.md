@@ -1,3 +1,7 @@
+---
+description: "Free, open linear algebra textbook with Python: geometry first, full proofs, 11 chapters and 13 hands-on experiments, from vectors to the SVD."
+---
+
 # Preface
 
 Linear algebra can be viewed as the study of linear spaces and linear mappings.[^lax] The most typical linear spaces are the finite-dimensional Euclidean spaces with Cartesian coordinates, where linear mappings can be understood through matrix multiplication and appear concretely as rotations, reflections, projections, scalings, shears, and their combinations. These transformations are everywhere in the physical world, computer graphics, statistics, and machine learning, and a first-year university linear algebra course usually starts from them.

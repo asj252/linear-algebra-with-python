@@ -22,7 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
+      - id: pages
+        uses: actions/configure-pages@v5
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -35,10 +36,25 @@ jobs:
           BASE_URL: /${{ github.event.repository.name }}/en
         run: jupyter-book build --html
       - name: Assemble site
+        env:
+          # e.g. https://asj252.github.io/linear-algebra-with-python
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
         run: |
           mkdir -p _site
           cp index.html _site/
+          cp images/logo.png _site/
           cp -r en/_build/html _site/en
+          # The static build writes sitemap.xml and robots.txt by crawling its own local
+          # theme server, so every URL there starts with http://localhost:3000.
+          # Point them at the published site; page URLs get the trailing slash GitHub Pages serves.
+          sed -i -E \
+            -e "s#<loc>http://localhost:3000</loc>#<loc>${SITE_URL}/en/</loc>#" \
+            -e "s#<loc>http://localhost:3000/([^<]+)</loc>#<loc>${SITE_URL}/en/\1/</loc>#" \
+            -e "s#http://localhost:3000#${SITE_URL}/en#g" \
+            _site/en/sitemap.xml _site/en/robots.txt
+          if grep -q localhost _site/en/sitemap.xml _site/en/robots.txt; then
+            echo "sitemap.xml or robots.txt still points to localhost"; exit 1
+          fi
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

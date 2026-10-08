@@ -26,7 +26,7 @@ pip install -r requirements.txt jupyterlab
 jupyter lab
 ```
 
-The interactive figures use Plotly `FigureWidget` and ipywidgets, which work best in JupyterLab.
+The interactive figures use Plotly `FigureWidget` and ipywidgets, which work best in JupyterLab. The read-online site shows the text, code and saved output; the sliders need a live Jupyter kernel, so use Colab, Binder or a local JupyterLab for those.
 
 ## Contents
 
