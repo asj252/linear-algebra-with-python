@@ -1,6 +1,17 @@
 version: 1
 project:
   title: Linear Algebra with Python
+  description: Linear algebra textbook as Jupyter notebooks. It covers linear mappings, full proofs, and Python experiments, from vectors to the SVD.
+  keywords:
+    - linear algebra
+    - Python
+    - Jupyter
+    - interactive
+    - eigenvalues
+    - SVD
+    - open textbook
+    - ipywidgets
+    - Plotly
   authors:
     - name: An-Sheng Jhang
     - name: Ping-Zen Ong
